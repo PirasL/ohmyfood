@@ -1,0 +1,381 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  counter-reset: section;
+}
+
+:root {
+  --primary: #9356dc;
+  --secondary: #ff79da;
+  --tertiary: #99e2d0;
+  --grey1: #f7f7f7;
+  --grey2: #eaeaea;
+}
+
+header {
+  background: rgba(0, 0, 255, 0.007);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title-block {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.header-title {
+  font-family: "Shrikhand", cursive;
+  margin: 11px;
+  font-size: 3rem;
+}
+
+.header-location {
+  text-align: center;
+  width: 100%;
+  background: var(--grey2);
+  height: 50px;
+  color: #353535;
+  display: flex;
+}
+
+.header-location h4 {
+  margin: auto;
+}
+
+.reservation {
+  box-sizing: border-box;
+  background-color: var(--grey1);
+  padding: 40px 45px 50px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reservation button {
+  width: 220px;
+  height: 50px;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.reservation-title {
+  font-size: 2.2rem;
+}
+
+.use {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 410px;
+}
+
+.use-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.use-button {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  width: 100%;
+  height: 72px;
+  background: var(--grey1);
+  border: none;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.use-button:hover {
+  background: #f5edff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.use-button::before {
+  width: 24px;
+  height: 24px;
+  background-color: var(--primary);
+  content: "";
+  position: relative;
+  left: -32px;
+  border-radius: 50px;
+  counter-increment: section;
+  content: counter(section);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* RESTAURANTS */
+.restaurant {
+  background: var(--grey1);
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.restaurant h3 {
+  font-size: 2.4rem;
+}
+
+.restaurant-badge {
+  position: absolute;
+  background: #99e2d0;
+  color: #008766;
+  width: 80px;
+  height: 30px;
+  z-index: auto;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.restaurant-wrapper {
+  display: grid;
+  gap: 18px;
+}
+
+.restaurant-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: white;
+  height: 310px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-card-img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant-card-info {
+  padding: 0 13px;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.restaurant a {
+  text-decoration: none;
+  color: black;
+  height: 100%;
+}
+
+.restaurant a:visited {
+  color: black;
+}
+.restaurant-card-info-title {
+  margin: 15px 0 5px 0;
+}
+
+.restaurant-card-info-p {
+  margin: 10px 0 5px 0;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 22px 25px;
+}
+
+.footer-title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+
+footer p {
+  margin: 8px 0;
+}
+
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  animation: fade 5s linear forwards;
+  position: fixed;
+}
+
+.spinner-title {
+  position: absolute;
+  top: -30px;
+}
+
+.canvas {
+  position: relative;
+  font-family: "Shrikhand", cursive;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50px;
+}
+
+.c1 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #ffffff00;
+  border-bottom: 2px solid #9356dc;
+  border-radius: 50px;
+  position: absolute;
+  animation: spin 0.8s ease infinite;
+}
+
+.c2 {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ffffff00;
+  border-bottom: 2px solid #99e2d0;
+  border-radius: 50px;
+  position: absolute;
+  animation: spin 0.95s linear infinite;
+}
+
+.c3 {
+  width: 90px;
+  height: 90px;
+  border: 2px solid;
+  border-radius: 50px;
+  position: absolute;
+
+  border: 2px solid #ffffff00;
+  border-bottom: 2px solid #ff79da;
+  animation: spin 1.05s linear infinite;
+}
+
+.fa-heart::before {
+  color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.fa-heart:hover:before {
+  -webkit-text-stroke-width: 0px;
+  background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  -webkit-background-clip: text;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes fade {
+  100% {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .body {
+    overflow: hidden;
+  }
+
+  .reservation-title {
+    font-size: 4rem;
+  }
+
+  .reservation-title br {
+    display: none;
+  }
+
+  .reservation-p {
+    color: grey;
+    margin-bottom: 40px;
+  }
+
+  .use {
+    height: 230px;
+    max-width: 1050px;
+    margin: auto;
+  }
+
+  .use-button-wrapper {
+    flex-direction: row;
+  }
+
+  .restaurant {
+    overflow: scroll;
+  }
+
+  .restaurant-container {
+    width: 1050px;
+    margin: auto;
+  }
+  .restaurant-wrapper {
+    flex-direction: row;
+    grid-template-columns: repeat(4, 335px);
+    gap: 32px;
+  }
+
+  .restaurant-card {
+    width: 100%;
+    height: 250px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #353535;
+    color: white;
+    padding: 22px 25px;
+    align-items: center;
+    gap: 30px;
+    padding-right: 70px;
+  }
+
+  .footer-container {
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+  }
+
+  .footer-title {
+    font-family: "Shrikhand", cursive;
+    font-weight: 100;
+    font-size: 1.8rem;
+  }
+
+  footer p {
+    margin: 8px 0;
+  }
+}
