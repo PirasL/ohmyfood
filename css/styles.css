@@ -292,11 +292,12 @@ footer a {
   -webkit-text-stroke-width: 0px;
   background: linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @keyframes spin {
   100% {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 

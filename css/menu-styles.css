@@ -52,6 +52,7 @@ main {
     z-index: 1;
 }
 
+
 .menu {
     box-sizing: border-box;
     background: var(--grey1);
@@ -88,6 +89,7 @@ main {
     border: solid 1px #99E2D0;
     top: -5px;
     width: 40px;
+    align: left
 }
 
 .menu-container {
