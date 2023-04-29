@@ -225,7 +225,7 @@ footer p {
   width: 100vw;
   position: absolute;
   top: 0;
-  animation: fade 5s linear forwards;
+  animation: fade 0.7s linear forwards;
   position: fixed;
 }
 
@@ -271,7 +271,6 @@ footer p {
   border: 2px solid;
   border-radius: 50px;
   position: absolute;
-
   border: 2px solid #ffffff00;
   border-bottom: 2px solid #ff79da;
   animation: spin 1.05s linear infinite;
@@ -290,10 +289,6 @@ footer p {
 }
 
 @keyframes spin {
-  0% {
-    rotate: 0deg;
-  }
-
   100% {
     rotate: 360deg;
   }
