@@ -216,6 +216,12 @@ footer p {
   margin: 8px 0;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 8px 0;
+}
+
 .spinner {
   display: flex;
   align-items: center;
