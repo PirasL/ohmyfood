@@ -114,7 +114,6 @@ header {
   width: 24px;
   height: 24px;
   background-color: var(--primary);
-  content: "";
   position: relative;
   left: -32px;
   border-radius: 50px;
