@@ -10,6 +10,10 @@ html {
     --grey2: #EAEAEA;
 }
 
+a {
+    text-decoration: none;
+    color: white
+}
 body {
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
@@ -207,7 +211,6 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 1fr 0px;
     transition: 1s;
-
 }
 
 .container:hover {
@@ -270,13 +273,17 @@ footer p {
 
     footer {
         display: flex;
-        flex-direction: row-reverse;
+        justify-content: flex-end;
         background-color: #353535;
         color: white;
         padding: 22px 25px;
         align-items: center;
         gap: 30px;
         padding-right: 70px;
+    }
+    
+    .footer-title {
+        order:1
     }
 
     .footer-container {
@@ -294,6 +301,7 @@ footer p {
     footer p {
         margin: 8px 0
     }
+ 
 }
 
 .menu-section:nth-of-type(1) {
