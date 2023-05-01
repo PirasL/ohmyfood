@@ -110,6 +110,14 @@ header {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 
+.use-button i {
+  color: grey
+}
+
+.use-button:hover i {
+  color: var(--primary)
+}
+
 .use-button::before {
   width: 24px;
   height: 24px;
